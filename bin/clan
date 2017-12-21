@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const argv = require('argh').argv;
+const Activity = require('../activity');
+
+//
+// Setup the Activity instance.
+//
+const activity = new Activity({
+  ratelimit: argv.ratelimit,
+  api: argv.api
+});
+
+//
+// Validate that we have the correct options.
+//
+if (!argv.group) {
+  throw new Error('Missing --group option, this should be your groups id on Bungie.net');
+}
+
+activity.memberlist(argv.group, (err, data) => {
+  activity.history(data, function (err, members) {
+    console.log(members);
+  });
+});

@@ -1,0 +1,41 @@
+{
+  "name": "destiny-clan-activity",
+  "version": "0.0.0",
+  "description": "Clan inactivity check",
+  "main": "index.js",
+  "bin": {
+    "clan": "./bin/clan"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destinythegame/clan-activity.git"
+  },
+  "keywords": [
+    "clan",
+    "destiny",
+    "boot",
+    "your",
+    "getting",
+    "booted",
+    "plebs",
+    "bungie",
+    "seeya"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/destinythegame/clan-activity/issues"
+  },
+  "homepage": "https://github.com/destinythegame/clan-activity#readme",
+  "dependencies": {
+    "argh": "^0.1.4",
+    "async": "^2.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "diagnostics": "^1.1.0",
+    "moment": "^2.19.4",
+    "request": "^2.83.0"
+  }
+}
